@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_share"
+    android:layout_width="@dimen/_280sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_marginTop="@dimen/_60sdp"
+    android:background="@drawable/bg_curve_white"
+    android:elevation="@dimen/_5sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@id/layout_header">
+
+    <TextView
+        android:id="@+id/tv_share_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/share_more_to_earn_more"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_share_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="@string/your_customers_can_visit"
+        android:textColor="@color/text_grey"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_share_title" />
+
+    <TextView
+        android:id="@+id/tv_sellplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/sellplus"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_share_subtitle" />
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="@dimen/_89sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:src="@drawable/ic_whatspp_share"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sellplus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_sellplus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
